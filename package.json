@@ -1,0 +1,40 @@
+{
+  "name": "seam-view",
+  "description": "Seam-view is the perfect companion to Seam, the tool to add behavior to your HTML via plugins. Seam view will wrap your template (HTML template or DOM elements) and bind it to seam in an easy to use wrapper that you can attach to the DOM and place wherever you want.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/flams/seam-view",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/flams/seam-view/master/LICENSE"
+    }
+  ],
+  "files": [
+    "LICENSE",
+    "index.js"
+  ],
+  "author": "Olivier Scherrer <pode.fr@gmail.com>",
+  "keywords": [
+    "html",
+    "behavior",
+    "plugin",
+    "binding",
+    "template",
+    "declarative"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:flams/seam-view.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flams/seam-view/issues"
+  },
+  "scripts": {
+    "test": "jasmine-node test/"
+  },
+  "main": "index.js",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
