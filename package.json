@@ -33,8 +33,10 @@
     "test": "jasmine-node test/"
   },
   "main": "index.js",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
+    "to-array": "~0.1.4",
+    "seam": "0.0.3",
+    "synchronous-fsm": "0.0.3"
   }
 }
