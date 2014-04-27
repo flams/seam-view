@@ -8,10 +8,11 @@
 "use strict";
 
 var StateMachine = require("synchronous-fsm"),
-    Seam = require("seam");
+    Seam = require("seam"),
+    toArray = require("to-array");
 
 function isAcceptedType(dom) {
-        return dom.nodeType => 1;
+    return dom.nodeType >= 1;
 }
 
 /**
@@ -57,7 +58,7 @@ module.exports = function SeamViewConstructor() {
                 UI.dom = baseNode.childNodes[0];
             }
 
-            UI.plugins.apply(UI.dom);
+            UI.seam.apply(UI.dom);
 
         } else {
             // An explicit message I hope
@@ -118,7 +119,7 @@ module.exports = function SeamViewConstructor() {
      * The module that will manage the plugins for this UI
      * @see Olives/Plugins' doc for more info on how it works.
      */
-    this.plugins = new Seam();
+    this.seam = new Seam();
 
     /**
      * Describes the template, can either be like "&lt;p&gt;&lt;/p&gt;" or HTMLElements
